@@ -15,6 +15,7 @@ namespace mywebapp
     {
         public Startup(IConfiguration configuration)
         {
+            //first pipeline built
             Configuration = configuration;
         }
 
