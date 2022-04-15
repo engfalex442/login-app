@@ -37,3 +37,8 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'test2'
     publishLocation: 'pipeline'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
